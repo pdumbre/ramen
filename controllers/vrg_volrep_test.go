@@ -475,10 +475,10 @@ func newVRGTestCaseCreate(pvcCount int, testTemplate *template, checkBind, vrgFi
 	objectNameSuffix := newRandomNamespaceSuffix()
 
 	v := &vrgTest{
-		uniqueID:    	  objectNameSuffix,
-		namespace:     	  fmt.Sprintf("envtest-ns-%v", objectNameSuffix),
-		vrgName:       	  fmt.Sprintf("vrg-%v", objectNameSuffix),
-		storageClass      testTemplate.storageClassName,
+		uniqueID:         objectNameSuffix,
+		namespace:        fmt.Sprintf("envtest-ns-%v", objectNameSuffix),
+		vrgName:          fmt.Sprintf("vrg-%v", objectNameSuffix),
+		storageClass:     testTemplate.storageClassName,
 		replicationClass: testTemplate.replicationClassName,
 		pvcLabels:        make(map[string]string),
 		pvcCount:         pvcCount,

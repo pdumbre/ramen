@@ -433,19 +433,18 @@ var _ = Describe("Test VolumeReplicationGroup", func() {
 })
 
 type vrgTest struct {
-	uniqueID         	string
-	namespace        	string
-	pvNames          	[]string
-	pvcNames         	[]string
-	vrgName          	string
-	storageClass     	string
-	replicationClass 	string
-	pvcLabels        	map[string]string
-	pvcCount         	int
-	checkBind        	bool
-	vrgFirst         	bool
-	emptyLabelSelector	bool
-	template         	*template
+	uniqueID         string
+	namespace        string
+	pvNames          []string
+	pvcNames         []string
+	vrgName          string
+	storageClass     string
+	replicationClass string
+	pvcLabels        map[string]string
+	pvcCount         int
+	checkBind        bool
+	vrgFirst         bool
+	template         *template
 }
 
 type template struct {
